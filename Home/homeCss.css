@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+h1 {
+  @font-face {
+    font-family: [Righteous];
+    src: url([//fonts.googleapis.com/css?family=Righteouscaminho]);
+  }
+}
+h3 {
+  @font-face {
+    font-family: [Righteous];
+    src: url([//fonts.googleapis.com/css?family=Righteouscaminho]);
+  }
+}
+
+body {
+  background-color: #1d2038;
+}
+
+nav {
+  color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #ffff;
+  align-items: center;
+  height: 10vh;
+}
+a {
+  color: #fff2e7;
+  text-decoration: none;
+}
+.navlista {
+  list-style: none;
+  display: flex;
+}
+.navLista li {
+  letter-spacing: 3px;
+  cursor: pointer;
+  padding: 8px;
+}
