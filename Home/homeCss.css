@@ -2,6 +2,10 @@
   padding: 0px;
   margin: 0px;
 }
+a {
+  color: #fff2e7;
+  text-decoration: none;
+}
 h1 {
   @font-face {
     font-family: [Righteous];
@@ -22,21 +26,30 @@ body {
 nav {
   color: #ffff;
   display: flex;
+  /* align-items: center; */
   justify-content: space-between;
   border-bottom: solid 1px #ffff;
-  align-items: center;
-  height: 10vh;
+  height: 8vh;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 a {
   color: #fff2e7;
   text-decoration: none;
 }
-.navlista {
+.navLista {
   list-style: none;
   display: flex;
 }
 .navLista li {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   cursor: pointer;
-  padding: 8px;
+  margin-left: 32px;
+}
+button {
+  justify-content: end;
+  background-color: #ff6738;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff2e7;
 }
