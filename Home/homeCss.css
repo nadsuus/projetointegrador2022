@@ -62,7 +62,9 @@ main {
   grid-template-columns: 1fr;
   gap: 15px;
 }
-
+.especif {
+  justify-items: center;
+}
 footer {
   border-top: solid 1px #fff2e7;
   color: #fff2e7;
