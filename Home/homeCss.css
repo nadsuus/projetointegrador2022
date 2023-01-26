@@ -2,36 +2,8 @@
   padding: 0px;
   margin: 0px;
 }
-a {
-  color: #fff2e7;
-  text-decoration: none;
-}
-h1 {
-  @font-face {
-    font-family: [Righteous];
-    src: url([//fonts.googleapis.com/css?family=Righteouscaminho]); 
-  }
-}
-h3 {
-  @font-face {
-    font-family: [Righteous];
-    src: url([//fonts.googleapis.com/css?family=Righteouscaminho]);
-  }
-}
-
 body {
   background-color: #1d2038;
-}
-
-nav {
-  color: #ffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: solid 1px #ffff;
-  height: 8vh;
-  flex-wrap: nowrap;
-  flex-direction: row;
 }
 a {
   color: #fff2e7;
@@ -46,10 +18,52 @@ a {
   cursor: pointer;
   margin-left: 32px;
 }
+nav {
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
 button {
   justify-content: end;
   background-color: #ff6738;
   padding: 10px;
   border-radius: 8px;
+  color: #fff2e7;
+}
+.titulosh1 {
+  @font-face {
+    font-family: [Righteous];
+    src: url([//fonts.googleapis.com/css?family=Righteouscaminho]);
+  }
+  color: #fec74e;
+}
+.titulosh2 {
+  color: #fec74e;
+}
+.titulosh3 {
+  @font-face {
+    font-family: [Righteous];
+    src: url([//fonts.googleapis.com/css?family=Righteouscaminho]);
+  }
+  color: #ff6738;
+}
+
+main {
+  border-top: solid 1px #fff2e7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+footer {
+  border-top: solid 1px #fff2e7;
   color: #fff2e7;
 }
