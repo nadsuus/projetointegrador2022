@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 * {
   padding: 0px;
   margin: 0px;
@@ -36,6 +38,10 @@ button {
   color: #fff2e7;
 }
 
+main {
+  border-top: solid 1px #fff2e7;
+}
+
 .conteudo-principal {
   display: flex;
   flex-direction: row;
@@ -49,12 +55,20 @@ button {
   gap: 10px;
 }
 .projetoIntegrador-titulo {
-  @font-righteous {
-    font-family: [Righteous];
-    src: url([//fonts.googleapis.com/css?family=Righteous]);
-  }
+  font-family: "Righteous", cursive;
+  font-width: 110px;
+  font-size: 45px;
+  color: #fec74e;
+}
+.Relatorio-subtitulo {
+  font-family: monospace;
+  font-size: 20px;
+  color: #5b79c8;
 }
 
+.Imagem-principal {
+  width: 430px;
+}
 footer {
   border-top: solid 1px #fff2e7;
   color: #fff2e7;
