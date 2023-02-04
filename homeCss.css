@@ -35,36 +35,23 @@ button {
   border-radius: 8px;
   color: #fff2e7;
 }
-.titulosh1 {
-  @font-face {
-    font-family: [Righteous];
-    src: url([//fonts.googleapis.com/css?family=Righteouscaminho]);
-  }
-  color: #fec74e;
-}
-.titulosh2 {
-  color: #fec74e;
-}
-.titulosh3 {
-  @font-face {
-    font-family: [Righteous];
-    src: url([//fonts.googleapis.com/css?family=Righteouscaminho]);
-  }
-  color: #ff6738;
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-main {
-  border-top: solid 1px #fff2e7;
+.div-conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.projetoIntegrador-titulo{
+  
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-}
-.especif {
-  justify-items: center;
-}
 footer {
   border-top: solid 1px #fff2e7;
   color: #fff2e7;
