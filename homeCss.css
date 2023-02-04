@@ -48,8 +48,11 @@ button {
   flex-direction: column;
   gap: 10px;
 }
-.projetoIntegrador-titulo{
-  
+.projetoIntegrador-titulo {
+  @font-righteous {
+    font-family: [Righteous];
+    src: url([//fonts.googleapis.com/css?family=Righteous]);
+  }
 }
 
 footer {
