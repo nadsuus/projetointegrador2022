@@ -30,12 +30,17 @@ nav {
   flex-direction: row;
 }
 
+.logoIFRN {
+  width: 50px;
+  padding-left: 24px;
+}
 button {
   justify-content: end;
   background-color: #ff6738;
   padding: 10px;
   border-radius: 8px;
   color: #fff2e7;
+  margin: 24px;
 }
 
 main {
@@ -56,7 +61,7 @@ main {
 }
 .projetoIntegrador-titulo {
   font-family: "Righteous", cursive;
-  font-width: 110px;
+  font-weight: 110px;
   font-size: 45px;
   color: #fec74e;
 }
@@ -67,9 +72,40 @@ main {
 }
 
 .Imagem-principal {
-  width: 430px;
+  width: 400px;
+}
+
+.conteudo-informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infor-principal1 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fec74e;
+  font-family: "Righteous", cursive;
+  border-top: 0.4px solid #fff2e7;
+  padding-top: 50px;
+}
+.infor-principal2 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fec74e;
+  font-family: "Righteous", cursive;
+}
+.infor-secundaria {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ff6738;
+  margin-top: 10px;
+  font-family: monospace;
 }
 footer {
   border-top: solid 1px #fff2e7;
   color: #fff2e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
