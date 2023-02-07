@@ -4,20 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Cadastro/cadastro.css">
     <title>Cadastro</title>
   </head>
   <body>
     <header>
-      <h1>CADASTRO</h1>
+      <header class="Cabecalho">
+        <nav>
+          <a href="/index.html" ><img class="logoIFRN" src="/Imgs/LogoIF.svg" alt="LOGO IFRN" /></a>
+          <ul class="navLista">
+            <li><a href="/AutoriaWeb/index.html">Autoria Web</a></li>
+            <li><a href="/BancoDeDados/index.html">Banco de Dados</a></li>
+            <li><a href="/Eletronica/index.html">Eletronica</a></li>
+            <li><a href="/Redes/index.html">Redes</a></li>
+            <li><a href="/ManutencaoDeComputadores/index.html">Manutenção</a></li>
+          </ul>
+
+        </nav>
+      </header>
     </header>
-
-    <main>
-      <div class="catalogos"><h2>Dados pessoais</h2></div>
-
-      <form action="./" method="">
+    
+    <main> 
+    <h1>CADASTRO</h1>
+    <div class="catalogos"><h2>Dados pessoais</h2></div>
+    
+    <form action="./" method="">
         <label for="Nome">Digite seu nome completo</label>
         <input type="text" id="nome" name="nome" />
 
+      <form action="./" method="">
+        <label for="cpf">Digite seu CPF</label>
+        <input type="cpf" id="cpf" name="cpf" />
+
+        <form action="./" method="">
+          <label for="email">Digite seu Email</label>
+          <input type="email" id="email" name="email" />
+      
         <label for="idade">Selecione sua data de nascimento</label>
         <input type="date" id="idade" name="idade" />
 
@@ -69,17 +91,9 @@
           <option value="to">Tocantins</option>
         </select>
 
-        <div class="catalogos"><h2>Sports</h2></div>
-
-        <label for="Esportes">Esportes</label>
-        <input type="checkbox" name="Basket" value="opcao-1" /> BASQUETE
-        <input type="checkbox" name="JUDO" value="opcao-1" /> JUDO
-        <input type="checkbox" name="VOLEI" value="opcao-1" /> VOLEI
-        <input type="checkbox" name="FUTEBOL" value="opcao-1" /> FUTEBOL
-        <input type="checkbox" name="VELA" value="opcao-1" /> VELA
-
         <button>Cadastrar</button>
       </form>
-    </main>
+      </main>
+      
   </body>
 </html>
