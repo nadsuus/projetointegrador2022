@@ -28,38 +28,38 @@
     <h1>CADASTRO</h1>
     <div class="catalogos"><h2>Dados pessoais</h2></div>
     
-    <form action="./" method="">
-        <label for="Nome">Digite seu nome completo</label>
+    <form class="nome" action="./" method="">
+        <label for="nome">Digite seu nome completo</label>
         <input type="text" id="nome" name="nome" />
 
-      <form action="./" method="">
+      <form class="cpf" action="./" method="">
         <label for="cpf">Digite seu CPF</label>
         <input type="cpf" id="cpf" name="cpf" />
 
-        <form action="./" method="">
+        <form class="email" action="./" method="">
           <label for="email">Digite seu Email</label>
           <input type="email" id="email" name="email" />
       
-        <label for="idade">Selecione sua data de nascimento</label>
+        <label class="dataNascimento" for="idade">Selecione sua data de nascimento</label>
         <input type="date" id="idade" name="idade" />
 
-        <label for="Sexo">Gênero</label>
+        <label class="genero" for="Sexo">Gênero</label>
         <input type="radio" name="opcao" value="masculino" /> Masculino
         <input type="radio" name="opcao" value="feminino" /> Feminino
         <input type="radio" name="opcao" value="outro" /> Outro
 
-        <label for="Senha">Digite uma senha</label>
-        <input type="password" id="senha" name="senha" />
+        <label  for="Senha">Digite uma senha</label>
+        <input  class="senha" type="password" id="senha" name="senha" />
 
-        <div class="catalogos"><h2>Endereço</h2></div>
+        <div class="enderecos"><h2>Endereço</h2></div>
 
-        <label for="rua">Rua:</label>
+        <label class="rua" for="rua">Rua:</label>
         <input type="text" id="Rua" name="Rua" />
 
-        <label for="cidade">Cidade:</label>
+        <label class="cidade" for="cidade">Cidade:</label>
         <input type="text" id="cidade" name="cidade" />
 
-        <label for="Estado">Estado</label>
+        <label class="estado" for="Estado">Estado</label>
         <select name="estado">
           <option value="estado">Selecione o Estado</option>
           <option value="ac">Acre</option>
@@ -96,4 +96,7 @@
       </main>
       
   </body>
+  <footer>
+    <h2>2022</h2>
+  </footer>
 </html>
