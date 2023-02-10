@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  color: #fff2e7;
+  text-decoration: none;
+}
+.navLista {
+  list-style: none;
+  display: flex;
+  margin-right: 24px;
+}
+.navLista li {
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-left: 32px;
+}
+nav {
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background-color: #1d2038;
+}
+
+.logoIFRN {
+  width: 50px;
+  padding-left: 24px;
+}
+
+main {
+  padding: 24px;
+  text-align: justify;
+}
