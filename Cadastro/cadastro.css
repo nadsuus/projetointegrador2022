@@ -1,14 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
+:root {
+  --amarelo: #fec74e;
+  --azul: #5b79c8;
+  --laranja: #ff6738;
+  --branco: #fff2e7;
+  --FundoDark: #1d2038;
+}
+
 * {
   padding: 0px;
   margin: 0px;
 }
 body {
-  background-color: #1d2038;
+  background-color: var(--FundoDark);
 }
 a {
-  color: #fff2e7;
+  color: var(--branco);
   text-decoration: none;
 }
 .navLista {
@@ -22,7 +30,7 @@ a {
   margin-left: 32px;
 }
 nav {
-  color: #ffff;
+  color: var(--branco);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,20 +45,20 @@ nav {
 }
 button {
   justify-content: end;
-  background-color: #ff6738;
+  background-color: var(--laranja);
   padding: 10px;
   border-radius: 8px;
-  color: #fff2e7;
+  color: var(--branco);
   margin: 24px;
 }
 
 main {
-  border-top: solid 1px #fff2e7;
+  border-top: solid 1px var(--branco);
 }
 
 h1 {
   margin: 0px;
-  color: #fff;
+  color: var(--branco);
   padding: 15px;
 }
 
@@ -58,7 +66,7 @@ label {
   display: block;
   margin: 30px 0px 10px 10px;
   font-size: 15px;
-  color: #fff2e7;
+  color: var(--branco);
 }
 
 input {
@@ -66,7 +74,7 @@ input {
   padding: 5px;
   border-radius: 8px;
   margin: 0px 0px 10px 10px;
-  color: #fff2e7;
+  color: var(--branco);
 }
 
 button {
@@ -76,7 +84,7 @@ button {
 }
 
 .titulos {
-  background-color:#13162b;
+  background-color: #13162b;
   padding: 15px;
   border-top: solid #fff 1px;
   color: #fff;
@@ -101,29 +109,33 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-.grid2{
+.grid2 {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
 
-.cpf{
-color: #38383880;
-font-size: 15px
-}
-.email{
+.cpf {
   color: #38383880;
-  font-size: 15px
+  font-size: 15px;
 }
-.dataNascimento{
+.email {
   color: #38383880;
-  font-size: 15px
+  font-size: 15px;
 }
-.nome{
+.dataNascimento {
   color: #38383880;
-  font-size: 15px
+  font-size: 15px;
 }
-.genero{
+.nome {
+  color: #38383880;
+  font-size: 15px;
+}
+
+.subGeneros {
+  color: var(--branco);
+}
+.genero {
   color: #fff2e7;
-  font-size: 15px
+  font-size: 15px;
 }

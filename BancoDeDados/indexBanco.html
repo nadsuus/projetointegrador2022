@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/BancoDeDados/bancoCSS.css" />
+    <link rel="stylesheet" href="/homeCss.css" />
+    <title>Banco de Dados</title>
+  </head>
+  <body>
+    <header>
+      <header class="Cabecalho">
+        <nav>
+          <a href="/index.html"
+            ><img class="logoIFRN" src="/Imgs/LogoIF.svg" alt="LOGO IFRN"
+          /></a>
+
+          <ul class="navLista">
+            <li><a href="/AutoriaWeb/index.html">Autoria Web</a></li>
+            <li><a href="#">Banco de Dados</a></li>
+            <li><a href="/Eletronica/index.html">Eletronica</a></li>
+            <li><a href="/Redes/index.html">Redes</a></li>
+            <li>
+              <a href="/ManutencaoDeComputadores/index.html">Manutenção</a>
+            </li>
+          </ul>
+
+          <button id="botaoCadastro">
+            <a href="/Cadastro/index.html">Cadastro </a>
+          </button>
+        </nav>
+      </header>
+    </header>
+
+    <main class="espacamento">
+      <section >
+        <article class="informacao">
+          <h1>PROGRAMAÇÃO COM ACESSO A BANCO DE DADOS</h1>
+
+          <h2>Equipe Responsável:</h2>
+          <ul>
+            <li>Bruna Tainá Cunha Torres</li>
+            <li>Fernanda Dantas Nascimento</li>
+            <li>Gabriel Eugênio Vitalino da Silva</li>
+            <li>Juciane da Silva Bento</li>
+            <li>Lucas Fábio Macedo de Almeida</li>
+            <li>Felipe Alves Pereira Pinto (Prof. Orientador)</li>
+          </ul>
+        </article>
+        <h2>3.1 INTRODUÇÃO AO CAPÍTULO 3</h2>
+        <p>
+          Esta seção apresenta a camada de persistência modelada para o sistema
+          de controle e monitoramento de acesso dos computadores, como também de
+          usuários em geral, sendo eles: alunos, professores, servidores e
+          administradores. Especificamente, o administrador é a pessoa
+          responsável pelo sistema de gerenciamento de banco de dados.
+          Utilizamos o software MySQL, em linguagem SQL (Linguagem de Consulta
+          Estruturada) para criação do SGBD (Sistema de Gerenciamento de Banco
+          de Dados) , juntamente com o ambiente de desenvolvimento integrado
+          Eclipse IDE for Java Developers, onde é desenvolvido o código na
+          linguagem de programação em Java.
+        </p>
+
+        <div class="imagens-banco-legenda">
+          <div class="imagens-banco">
+            <img class="sql" src="/Imgs/mysql-ar21.svg" alt="logo myqsl" />
+
+            <img src="/Imgs/java-vertical.svg" alt="logo java" />
+
+            <img src="/Imgs/eclipse-seeklogo.com.svg" alt="logo eclipse" />
+          </div>
+          <figcaption class="legenda">
+            <strong>Legenda:</strong> Imagem das logos do SGBD (MySQL),
+            linguagem de programação (Java) e do software de desenvolvimento
+            integrado (Eclipse IDE).
+          </figcaption>
+        </div>
+      </section>
+
+      <section>
+        <h2>3.2 CRIAÇÃO DO BANCO DE DADOS</h2>
+        <p>
+          Tendo em vista que o objetivo da criação do banco de dados é controlar
+          o acesso a quem utiliza os computadores, foi desenvolvido este SGBD
+          (Sistema de Gerenciamento de Banco de Dados). Portanto, algumas etapas
+          foram necessárias, estas serão devidamente explicitadas e detalhadas,
+          para uma melhor compreensão do que foi proposto e realizado.
+        </p>
+        <p>
+          Inicialmente, foi criada uma tabela no banco de dados, onde é definido
+          os campos considerados importantes para serem armazenados, como:
+          matrícula, nome, CPF, e-mail, etc.
+        </p>
+        <p>Imagem a seguir com o Script:</p>
+
+        <div class="imagens-banco-legenda">
+          <div class="imagens-java-banco">
+            <img src="/Imgs/Script_Banco.png" alt="imagem script banco" />
+
+            <figcaption class="legenda">
+              <strong>Fonte:</strong> Autoria Própria. Imagem 1.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <article>
+          <h2>3.3 DESENVOLVIMENTO DO CÓDIGO JAVA</h2>
+          <p>
+            Primeiramente, foi feita a conexão entre os arquivos .java e o SGBD,
+            como também a estruturação dos packages (pacotes) no Eclipse, de
+            forma que ficasse da seguinte maneira:
+          </p>
+        </article>
+
+        <article>
+          <h3>3.3.1 ModeloDAO</h3>
+          <p>
+            É onde tem a conexão anteriormente citada e o arquivo que contém as
+            funções relacionadas ao SGBD, como, por exemplo, a de inserir um
+            novo usuário. Foi adicionado “DAO” ao final do nome da package, a
+            fim de identificar o local em que se encontram os arquivos .class
+            com as Strings sql, as quais farão a modificação nas tabelas banco
+            de dados.
+          </p>
+        </article>
+
+        <article>
+          <h3>3.3.2 ModeloEntidade</h3>
+          <p>
+            Onde está contida a classe usuário, para sempre que for preciso
+            criar um objeto, este seja do tipo Usuário.
+          </p>
+        </article>
+
+        <article>
+          <h3>3.3.3 Visão</h3>
+          <p>
+            Seguindo adiante utilizando o software Eclipse IDE, dentro do
+            package visão, há o terminal e nele inicia-se o código com uma
+            função capaz de oferecer um menu, onde é listado as operações que o
+            SGBD torna-se capaz de realizar no banco de dados.
+          </p>
+          <div class="imagens-banco-legenda">
+            <div class="imagens-java-banco">
+              <img src="/Imgs/visao.png" alt="imagem visão do banco" />
+              <figcaption class="legenda">
+                <strong>Fonte:</strong> Autoria Própria. Imagem 2.
+              </figcaption>
+            </div>
+          </div>
+          <p>
+            Dessa forma, cada opção do menu possui um bloco de código
+            responsável por fazê-la funcionar. O objetivo desse programa, além
+            do gerenciamento de acesso aos usuários, é proporcionar uma boa
+            experiência a quem está utilizando.
+          </p>
+        </article>
+
+        <article>
+          <h3>3.3.4 AbstratoDAO</h3>
+          <p>
+            Essa classe realiza a comunicação entre o banco de dados e o Eclipse
+            IDE, e é por causa dele que conseguimos alocar os dados, remover ou
+            atualizar os dados. É necessário informar o hostname, o nome, user e
+            senha do banco de dados para realizar uma conexão efetiva.
+            Percebe-se isso na linha 14 e 15 do banco de dados.
+          </p>
+
+          <div class="imagens-java-legenda">
+            <div class="imagens-java-banco">
+              <img src="/Imgs/dao.png" alt="imagem dao banco" />
+              <figcaption class="legenda">
+                <strong>Fonte:</strong> Autoria Própria. Imagem 3.
+              </figcaption>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <h3>3.3.5 DateUtil</h3>
+          <p>
+            A classe java.util.Date representa e fornece construtores e métodos
+            para lidar com data e hora em java. Vimos ela no código quando
+            cadastramos ou atualizamos os dados quando era pedido a data de
+            nascimento.
+          </p>
+
+          <div class="imagens-java-legenda">
+            <div class="imagens-java-banco">
+              <img src="/Imgs/visao1.png" alt="imagem banco visao 1" />
+              <figcaption class="legenda">
+                <strong>Fonte:</strong> Autoria Própria. Imagem 4.
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="imagens-java-legenda">
+            <div class="imagens-java-banco">
+              <img src="/Imgs/visao2.png" alt="imagem banco visao 2" />
+              <figcaption class="legenda">
+                <strong>Fonte:</strong> Autoria Própria. Imagem 5.
+              </figcaption>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h2>2022</h2>
+    </footer>
+  </body>
+</html>

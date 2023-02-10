@@ -1,16 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+:root {
+  --azulPrimário: #1d2038;
+  --azulSecundário: #293166;
+  --brancoDestaque: #b7d0d8;
+  --corDestaque: #69a9be;
+}
 
 * {
   padding: 0px;
   margin: 0px;
 }
 body {
-  background-color: #1d2038;
+  background-color: var(--azulPrimário);
+  background-image: radial-gradient(
+    circle,
+    var(--azulSecundário),
+    var(--azulPrimário)
+  );
 }
 a {
-  color: #fff2e7;
+  color: #d8daee;
   text-decoration: none;
 }
+
 .navLista {
   list-style: none;
   display: flex;
@@ -19,9 +31,21 @@ a {
   letter-spacing: 2px;
   cursor: pointer;
   margin-left: 32px;
+  color: #d8daee;
+  text-decoration: none;
+  padding: 5px;
 }
+
+.navLista li :hover {
+  color: var(--azulPrimário);
+  background-color: var(--brancoDestaque);
+  width: 10px;
+  transition: 0.7s;
+  border-radius: 10px;
+}
+
 nav {
-  color: #ffff;
+  font-family: "Righteous", cursive;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,18 +57,25 @@ nav {
 .logoIFRN {
   width: 50px;
   padding-left: 24px;
+  color: var(--brancoDestaque);
 }
-button {
+
+#botaoCadastro {
   justify-content: end;
-  background-color: #ff6738;
+  background-color: var(--azulSecundário);
   padding: 10px;
-  border-radius: 8px;
-  color: #fff2e7;
-  margin: 24px;
+  border-radius: 5px;
+  color: var(--brancoDestaque);
+  font-family: "Righteous", cursive;
+}
+#botaoCadastro:hover {
+  background-color: var(--brancoDestaque);
+  color: var(--azulSecundário);
+  transition: 0.7s;
 }
 
 main {
-  border-top: solid 1px #fff2e7;
+  border-top: solid 1px var(--brancoDestaque);
 }
 
 .conteudo-principal {
@@ -63,12 +94,12 @@ main {
   font-family: "Righteous", cursive;
   font-weight: 110px;
   font-size: 45px;
-  color: #fec74e;
+  color: var(--brancoDestaque);
 }
 .Relatorio-subtitulo {
   font-family: monospace;
   font-size: 20px;
-  color: #5b79c8;
+  color: var(--corDestaque);
 }
 
 .Imagem-principal {
@@ -84,7 +115,7 @@ main {
 .infor-principal1 {
   font-weight: 400;
   font-size: 24px;
-  color: #fec74e;
+  color: var(--brancoDestaque);
   font-family: "Righteous", cursive;
   border-top: 0.4px solid #fff2e7;
   padding-top: 50px;
@@ -92,22 +123,21 @@ main {
 .infor-principal2 {
   font-weight: 400;
   font-size: 24px;
-  color: #fec74e;
+  color: var(--brancoDestaque);
   font-family: "Righteous", cursive;
 }
 .infor-secundaria {
   font-weight: 400;
   font-size: 20px;
-  color: #ff6738;
+  color: var(--corDestaque);
   margin-top: 10px;
   font-family: monospace;
 }
 footer {
   margin-top: 24px;
-  border-top: solid 1px #fff2e7;
-  color: #fff2e7;
+  border-top: solid 1px var(--brancoDestaque);
+  color: var(--brancoDestaque);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
