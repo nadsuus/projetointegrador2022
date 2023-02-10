@@ -37,4 +37,25 @@ nav {
 main {
   padding: 24px;
   text-align: justify;
+  list-style: none;
+  text-decoration: none;
+}
+table {
+  align-content: center;
+}
+h3 {
+  padding: 15px 15px;
+}
+h4 {
+  padding: 15px 15px;
+}
+
+table {
+  border: solid 1px;
+}
+
+.orcamento {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
