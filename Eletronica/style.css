@@ -1,0 +1,169 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1d2038;
+  color:#fff2e7;
+}
+
+section {
+  margin: 50px 20px 15px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  color: #fff2e7;
+  text-decoration: none;
+}
+.navLista {
+  list-style: none;
+  display: flex;
+}
+.navLista li {
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-left: 32px;
+}
+
+ul li{
+  text-decoration: none;
+  list-style: none;
+  ali
+}
+nav {
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+}
+
+.integrantes{
+  display: flex;
+  margin: 50px 10px 20px 20px;
+}
+footer {
+  margin-top: 24px;
+  border-top: solid 1px #fff2e7;
+  color: #fff2e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: #1d2038;
+}
+a {
+  color: #fff2e7;
+  text-decoration: none;
+}
+.navLista {
+  list-style: none;
+  display: flex;
+}
+.navLista li {
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-left: 32px;
+}
+nav {
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.logoIFRN {
+  width: 50px;
+  padding-left: 24px;
+}
+button {
+  justify-content: end;
+  background-color: #ff6738;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff2e7;
+  margin: 24px;
+}
+
+main {
+  border-top: solid 1px #fff2e7;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.div-conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.projetoIntegrador-titulo {
+  font-family: "Righteous", cursive;
+  font-weight: 110px;
+  font-size: 45px;
+  color: #fec74e;
+}
+.Relatorio-subtitulo {
+  font-family: monospace;
+  font-size: 20px;
+  color: #5b79c8;
+}
+
+.Imagem-principal {
+  width: 400px;
+}
+
+.conteudo-informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infor-principal1 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fec74e;
+  font-family: "Righteous", cursive;
+  border-top: 0.4px solid #fff2e7;
+  padding-top: 50px;
+}
+.infor-principal2 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fec74e;
+  font-family: "Righteous", cursive;
+}
+.infor-secundaria {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ff6738;
+  margin-top: 10px;
+  font-family: monospace;
+}
+footer {
+  margin-top: 24px;
+  border-top: solid 1px #fff2e7;
+  color: #fff2e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
