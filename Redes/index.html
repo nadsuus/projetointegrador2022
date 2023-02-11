@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="redes.css" />
+    <title>Relatorio de Redes</title>
+  </head>
+  <body>
+    <header class="Cabecalho">
+      <nav>
+        <a href="/index.html"
+          ><img class="logoIFRN" src="LogoIF.svg" alt="LOGO IFRN"
+        /></a>
+
+        <ul class="navLista">
+          <li><a href="/AutoriaWeb/index.html">Autoria Web</a></li>
+          <li><a href="/BancoDeDados/index.html">Banco de Dados</a></li>
+          <li><a href="/Eletronica/index.html">Eletronica</a></li>
+          <li><a href="/Redes/index.html">Redes</a></li>
+          <li><a href="/ManutencaoDeComputadores/index.html">Manutenção</a></li>
+        </ul>
+
+        <button><a href="/Cadastro/index.html">Cadastro </a></button>
+      </nav>
+    </header>
+    <main>
+      <h1>Retorio Redes de Computadores</h1>
+
+      <h3>Integrantes</h3>
+      <nav class="integrantes">
+        <ul>
+          <li class="nomes">Andre Gabriel Zoculoto Filho</li>
+          <li class="nomes">Giovana Liz Bernadino Gadelha</li>
+          <li class="nomes">Maria Eduarda Moreira de Souza</li>
+          <li class="nomes">Thalisson Vinicius Medeiros de Lima</li>
+          <li class="nomes">Matheus Souza Aires</li>
+          <li class="nomes">Jose Macedo Firmino Filho (prof orientador)</li>
+          <li class="nomes">
+            Leonardo Gomes de Paiva Amorim (prof Orientador)
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <article>
+          <h2>2.1 INTRODUÇÃO AO CAPÍTULO 2</h2>
+          <p>
+            Neste capítulo trabalhamos as especificações dos dispositivos de
+            computação que permitam interconectar equipamentos para trocarem
+            dados e compartilharem recursos entre si. Para isso, faremos uso dos
+            conhecimentos adquiridos na matéria Arquitetura de Redes de
+            Computadores e Tecnologia de Implementação de Redes. Na sequência
+            será apresentado o projeto de infraestrutura de redes de
+            computadores para o Laboratório de Informática da Escola Estadual em
+            Tempo Integral Vereador José Moacir de Oliveira. O objetivo
+            principal é implementar uma estrutura de redes da escola, levando em
+            consideração os aspectos de disponibilidade, custo-benefício,
+            confiabilidade, segurança e integridade das informações para uma
+            melhor infraestrutura de rede. Este trabalho, também, procurou levar
+            em consideração outros aspectos importantes da implementação e dos
+            resultados práticos que seriam obtidos após todas as modificações e
+            melhorias propostas. Com a execução do trabalho, espera-se uma
+            melhora na rede de computadores e no seu monitoramento, assegurando
+            melhor desempenho e segurança, com isso mitigando possíveis erros
+            causados por uma má configuração da rede de computadores.
+          </p>
+        </article>
+
+        <article>
+          <h2>
+            2.2 ARQUITETURA DE REDES DE COMPUTADORES E TECNOLOGIA DE
+            IMPLEMENTAÇÃO DE REDES
+          </h2>
+          <p>
+            O presente projeto destina-se à orientação para a construção de uma
+            escola de pavimento (Espaço Educativo). A disposição de
+            planejamento, ambiguamente, apresenta 20m² de área, sendo
+            respectivamente 6,7m de comprimento e 3m de altura. O ambiente será
+            projetado por 25 computadores e 17 mesas de ergonomia, partindo do
+            pressuposto, onde cada uma possui 2,60cm de comprimento e 60cm de
+            largura, nesse contexto serão posicionados três computadores em duas
+            mesas localizadas lado a lado. Faz-se necessário manter a distância
+            lateral entre a superfície da parede e as bancadas, visto que nas
+            paredes estarão localizadas as portas do cabeamento da rede. O
+            espaço de locomoção entre o espaço das cadeiras e a bancada,
+            respectivamente, deve seguir a medida de 65cm, onde, entretanto, a
+            mesa do docente só receberá um dos computadores e terá distância
+            entre a primeira bancada de 90cm, e 50cm entre a mesa e a parede.
+            Observando a estrutura do laboratório, é importante que o rack e o
+            switch de 48 portas fiquem próximos ao computador do professor. A
+            distribuição do cabeamento de internet será feita a partir dos 8
+            espelhos de parede 4x4 com 4 Rj45 para rede, os quais já se
+            encontram no laboratório. Assim, cada máquina terá um cabo de rede
+            conectado em uma das saídas Rj45. De acordo com ABNT NBR 9050/2020,
+            a qual estabelece critérios e parâmetros técnicos a serem observados
+            quanto ao projeto, construção, instalação e adaptação do meio urbano
+            e rural, e de edificações às condições de acessibilidade. Faz-se
+            necessário, de acordo com a representação da planta baixa, a
+            obrigatoriedade dos corredores possuírem horizontalmente 1,5m.
+          </p>
+          <figure>
+            <img src="" alt="" />
+          </figure>
+        </article>
+
+        <article>
+          <h2>2.3 DISTRIBUIÇÃO DE IP</h2>
+          <p>
+            Uma vez apresentada a estrutura e os componentes do projeto, é
+            importante descrever as configurações lógicas. Para isso, serão
+            descritos os endereços IP ’s e a máscara que deverão ser utilizados
+            na configuração da rede. Os endereços IP 's são meios necessários
+            para identificar os equipamentos na rede e permitir que as
+            informações trafeguem e seja localizado o destinatário e o
+            remetente. Para este fim, o endereço 192.168.0.0 com a máscara
+            255.255.255.0 foi utilizado, pois este é um endereço disponibilizado
+            para redes locais (LAN) que podem ser utilizados sem custo. Na rede
+            especificada poderá ser utilizada até 254 equipamentos. Destes
+            equipamentos, deixou-se o roteador (fornecido pelo provedor de
+            acesso), impressora e o PC do professor com IP fixo, enquanto que os
+            PC’ s dos alunos poderão ficar com IP’ s variáveis, configurados de
+            forma automática. Na tabela a seguir, será apresentado os
+            equipamentos, seus respectivos endereços IP’ s e o cabeamento
+            sugerido. O cabo par trançado UTP cat6 foi utilizado, pois possui o
+            melhor custo-benefício das possíveis sugestões.
+          </p>
+
+          <h4>2.4 ORÇAMENTO</h4>
+          <p>
+            Para realizar a instalação do projeto de redes proposto, serão
+            necessários os equipamentos listados a seguir:
+          </p>
+
+          <h4>2.5 RESULTADOS</h4>
+          <p>
+            implantação desse projeto irá resultar na configuração e
+            compartilhamento de recursos de rede no laboratório, padronização
+            dos equipamentos, documentação com todas as informações sobre os
+            equipamentos de rede e suas interligações. Sugerimos ainda que a
+            escola adquira uma conexão a rede externa (Internet) através de
+            algum provedor de acesso. Desta forma, o laboratório de informática
+            da Escola Estadual em Tempo Integral Vereador José Moacir de
+            Oliveira terá conexão entre os seus equipamentos e com as redes
+            externas. Por fim, é importante informar que todas essas melhorias
+            têm por finalidade deixar a rede documentada para que seja mais
+            fácil e ágil qualquer intervenção que seja necessário efetuar no
+            futuro.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
